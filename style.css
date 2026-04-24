@@ -1,1 +1,89 @@
+/* --- Global Styles --- */
+body {
+    background-color: #121212; /* Dark theme */
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace; /* Moody, tech vibe */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+/* --- Screen Layouts --- */
+.fullscreen-center {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    transition: opacity 1s ease-in;
+}
+
+/* --- Buttons --- */
+.button-group button {
+    background: transparent;
+    border: 2px solid #e0e0e0;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-group button:hover {
+    background-color: #e0e0e0;
+    color: #121212;
+}
+
+/* --- Login Box Style --- */
+.login-box {
+    border: 1px solid #444;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+}
+
+#key-input {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #00ff00; /* Green hacker text */
+    padding: 10px;
+    width: 200px;
+}
+
+/* --- THE UNBOXING ANIMATION --- */
+.box-visual {
+    width: 100px; height: 100px;
+    background-color: #8b4513; /* Brown box */
+    position: relative;
+    transform-origin: bottom center;
+}
+
+.box-lid {
+    width: 100px; height: 30px;
+    background-color: #a0522d;
+    position: absolute;
+    top: -30px; left: 0;
+    transition: transform 1s ease-in-out;
+}
+
+/* The open state triggered by JavaScript */
+.box-visual.open .box-lid {
+    transform: rotateX(110deg) translateY(-20px);
+}
+
+@keyframes vanish {
+    to { opacity: 0; visibility: hidden; }
+}
+
+#screen-unboxing h3 {
+    margin-top: 20px;
+}
