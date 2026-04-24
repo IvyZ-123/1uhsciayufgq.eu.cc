@@ -1,49 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do you know Ivy?</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div id="screen-question" class="fullscreen-center dsotm-bg">
+    <div class="celebrity mj"></div>
+    <div class="celebrity napoleon"></div>
+    <div class="celebrity queen"></div>
 
-    <div id="screen-question" class="fullscreen-center">
-        <h1>Do you know Ivy?</h1>
-        <div class="button-group">
-            <button onclick="handleQuestion('YES')">YES</button>
-            <button onclick="handleQuestion('yes')">yes</button>
-        </div>
+    <div class="moon-prism"></div>
+    
+    <h1 class="ransom-note">
+        <span class="jump">D</span><span class="jump">o</span>
+        &nbsp;
+        <span class="jump">y</span><span class="jump">o</span><span class="jump">u</span>
+        &nbsp;
+        <span class="jump">k</span><span class="jump">n</span><span class="jump">o</span><span class="jump">w</span>
+        &nbsp;
+        <span class="jump" style="color: #ff0000;">I</span><span class="jump" style="color: #ff7f00;">v</span><span class="jump" style="color: #ffff00;">y</span><span class="jump" style="color: #00ff00;">?</span>
+    </h1>
+
+    <div class="button-group">
+        <button onclick="handleQuestion('YES')">YES</button>
+        <button onclick="handleQuestion('yes')">yes</button>
     </div>
-
-    <div id="screen-response" class="fullscreen-center" style="display: none;">
-        <div id="response-message">
-            </div>
-        <div class="login-box">
-            <p>Your Access Key: <strong id="generated-key">-------</strong></p>
-            <input type="text" placeholder="Enter key here..." id="key-input">
-            <button onclick="handleLogin()">Unlock Website</button>
-        </div>
-    </div>
-
-    <div id="screen-unboxing" class="fullscreen-center" style="display: none;">
-        <div class="box-visual">
-            <div class="box-lid"></div>
-            <div class="box-body"></div>
-        </div>
-        <h3>Unboxing your access...</h3>
-    </div>
-
-    <div id="screen-main-content" class="container" style="display: none; opacity: 0;">
-        <header>
-            <h1>[Your Band Name] Main Portfolio</h1>
-        </header>
-        <section class="main-body">
-            <h2>Welcome, Traveler.</h2>
-            <p>You have successfully unlocked access to the archive. This is the main page.</p>
-            </section>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+</div>
